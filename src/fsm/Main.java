@@ -1,6 +1,9 @@
 package fsm;
 
+import fsm.domain.Fsm;
 import fsm.domain.Node;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +21,16 @@ public class Main {
         s3.setNodeA(s3);
         s3.getNodeB(s0);
 
-        System.out.println(s0.volgendeNode('A'));
+
+
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str= sc.nextLine();
+        Fsm new_FSM =  new Fsm("New_FSM");
+        new_FSM.setZin(str);
+        new_FSM.eersteStap(s0);
+        new_FSM.stappen();
+        System.out.println(new_FSM);
 
 
     }
