@@ -2,7 +2,7 @@
 Finite State Machines zijn de basis voor veel simulaties en AI in bijvoorbeeld games. Zonder daar al te diep op in te gaan kunnen we ze gebruiken om de kracht van OO programmeren te tonen. Je kunt namelijk een FSM implementeren met stukken minder code en bijzonder flexibel door OO technieken toe te passen.
 
 # UML
-![image](https://user-images.githubusercontent.com/74404094/118317524-769fb800-b4f8-11eb-965f-f66ebef79831.png)
+![image](https://user-images.githubusercontent.com/74404094/118486438-e80a8100-b719-11eb-9bcf-6c7010d9056c.png)
 
 # hoe werkt de FSM
 
