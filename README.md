@@ -16,3 +16,5 @@ Dan definieer je die zin in je FSM. vervolgens loopt de FSM door de zin heen en 
 Dan kijkt die naar de afgelopen node waar we dan de volgende node uit op kunnen maken en die voeg je toe aan de lijst van volgende nodes. als de zin op is stopt de loop. 
 en geeft die het antwoord terug
 
+Je kunt de FSM zelf uitbreiden doordat er geen maximum zit aan het aantal nodes, en je kunt zelf bepalen welke node moet komen na welke letter in de FSM.
+
