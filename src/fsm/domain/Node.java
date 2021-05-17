@@ -1,30 +1,17 @@
 package fsm.domain;
+import java.util.HashMap;
 
 public class Node {
 
     private String naam;
-    private Node nodeA;
-    private Node nodeB;
+    private HashMap<Character, Node> listNextNodes = new HashMap<Character, Node>();
 
     public Node(String naam) {
         this.naam = naam;
     }
 
-
-    public Node getNodeA() {
-        return nodeA;
-    }
-
-    public void setNodeA(Node nodeA) {
-        this.nodeA = nodeA;
-    }
-
-    public Node getNodeB(Node s0) {
-        return nodeB;
-    }
-
-    public void setNodeB(Node nodeB) {
-        this.nodeB = nodeB;
+    public void voegNodeToe(char a, Node b) {
+        this.listNextNodes.put(a, b);
     }
 
     @Override
@@ -35,10 +22,7 @@ public class Node {
     }
 
     public Node volgendeNode(char x) {
-        return switch (x) {
-            case 'A' -> nodeA;
-            case 'B' -> nodeB;
-            default -> null;
-        };
+        return this.listNextNodes.get(x);
+
     }
 }
