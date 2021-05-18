@@ -1,6 +1,7 @@
 package fsm;
 
 import fsm.domain.Fsm;
+
 import fsm.domain.Node;
 
 import java.util.Scanner;
